@@ -34,6 +34,10 @@ Contributions to the Stock Tracker Web Application are welcome! Please follow th
 4. Push to the branch.
 5. Submit a pull request.
 
+##Web Page
+![Screenshot 2024-03-04 at 4 03 16 PM](https://github.com/NemoPatel/Stock-Price-Tracker/assets/126904097/7d5f928c-ed5a-41de-b022-413574034523)
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
