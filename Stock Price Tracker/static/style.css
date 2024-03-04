@@ -1,0 +1,124 @@
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    color: white;
+}
+p{
+    color:white;
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1efef;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.5s;
+    background: #eee;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    border-radius: 10px; /* Rounded corners */
+}
+
+.stock-box:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Color classes with potential gradient backgrounds or simply improved color schemes */
+.red, .dark-red {
+    color: #ff0000;
+    background: linear-gradient(45deg, #ebaeae, #ebaeae);
+}
+
+.gray {
+    color: #808080;
+    background: linear-gradient(45deg, #9e9e9e, #808080);
+}
+
+.dark-green, .green {
+    color: #00BB00;
+    background: linear-gradient(45deg, #b1fab1, #b1fab1);
+}
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    gap: 20px; /* Provides consistent spacing between items */
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 5px;
+    padding: 20px;
+    color: #000000; /* Darker text color for better readability */
+    background: #f9f9f9; /* Lighter background for contrast */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content evenly */
+    transition: transform 0.3s ease-in-out; /* Smooth transform transition */
+}
+
+/* Enhanced visual cues for data updates */
+.red-flash, .green-flash, .gray-flash {
+    transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.red-flash {
+    background-color: #ffcccc; /* Softer red for negative change */
+}
+
+.green-flash {
+    background-color: #ccffcc; /* Softer green for positive change */
+}
+
+.gray-flash {
+    background-color: #f0f0f0; /* Neutral gray for no change */
+}
+
+/* Hover effect for interactivity */
+.stock-box:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    border-color: #666; /* Darker border on hover */
+}
+html,
+body {
+  height: 100%;
+  background: #000000;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: "Lilita One", cursive;
+}
+
+.button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}

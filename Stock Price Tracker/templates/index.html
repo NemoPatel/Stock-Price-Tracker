@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Include Google Fonts and FontAwesome as in the first HTML snippet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+          font-family: "Audiowide", sans-serif;
+        }
+        </style>
+        </head>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lilita+One&family=Passion+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <style> 
+        input[type=text] {
+          width: 25%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 3px solid #ccc;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          border-radius: 12px;
+          outline: none;
+        }
+        
+        
+        input[type=text]:focus {
+          border: 3px solid #555;
+        }
+        </style>
+
+</head>
+<body>
+    <center>
+    <div class="main-container">
+        <h1>Stock Price Tracker</h1>
+        <form id="add-ticker-form" class="ticker-form">
+            <input type="text" id="new-ticker" placeholder="Add Ticker" required>
+            <!-- Updated "Add" button with class "button" for styling -->
+            <button type="submit" class="button">Add</button>
+        </form>
+        <p id="timer">Next update in <span id="counter"></span> seconds.</p>
+        <div id="tickers-grid"></div>
+    </div>
+    </center>
+</body>
+</html>
