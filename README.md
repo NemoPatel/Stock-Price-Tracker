@@ -15,9 +15,8 @@ This Stock Tracker Web Application is designed to provide users with real-time u
 To get started with the Stock Tracker Web Application on your local machine, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install the required Python dependencies: `pip install -r requirements.txt`.
-3. Start the Python server: `python app.py`.
-4. Open `index.html` in your browser to access the web application.
+2. Start the Python server: `python app.py`.
+3. Open `index.html` in your browser to access the web application.
 
 ## Usage
 
